@@ -48,7 +48,7 @@
                                         <label for=""></label>
                                         <input type="password">
                                     </p>
-                                    <p><a href="#">Забули пароль?</a></p>
+                                    <p><a id="forget-pass" href="#">Забули пароль?</a></p>
                                     <div>
                                         <label>
                                             <span class="parent">
@@ -71,12 +71,12 @@
             <h2 class="headlines">02. Елементи</h2>
             <div class="flex between">
                 <div class="radios">
-                    <input type="radio" name="radio">
-                    <label>Нова Пошта</label> <br>
-                    <input type="radio" name="radio">
-                    <label>Кур'єр</label> <br>
+                    <input type="radio" id="radio" name="radio">
+                    <label for="radio">Нова Пошта</label> <br>
+                    <input type="radio" id="radio1" name="radio">
+                    <label for="radio1">Кур'єр</label> <br>
                     <input type="radio" disabled id="last-label">
-                    <label for="last-label">Самовивіз</label>
+                    <label id="last-label" for="last-label">Самовивіз</label>
                 </div>
                 <div class="checkboxes">
                     <label>
@@ -93,7 +93,7 @@
                         </span>
                         Згідний з ПДВ 9%
                     </label>
-                    <label>
+                    <label for="first-in" id="last-label">
                         <span class="parent">
                             <input class="custom-checkbox" type="checkbox" id="first-in" disabled>
                             <span class="arrow"></span>
@@ -145,12 +145,12 @@
             <div class="flex between items-center">
                 <div class="boy-or-girl">
                     <p class="flex between items-center">
-                        <input type="radio" class="boy" name="first-rad">
-                        <label class="man">Чоловік</label>
+                        <input type="radio" class="boy" id="boy" name="first-rad">
+                        <label for="boy" class="man">Чоловік</label>
                     </p>
                     <p class="flex between items-center">
-                        <input type="radio" class="girl" name="first-rad">
-                        <label class="woman">Жінка</label>
+                        <input type="radio" class="girl" id="girl" name="first-rad">
+                        <label for="girl" class="woman">Жінка</label>
                     </p>
                 </div>
                 <div class="tumblers">
@@ -211,14 +211,12 @@
                             <p>Місто:</p>
                         </td>
                         <td>
-                            <label class="arrow-1">
                                 <select name="" id="">
                                     <option selected disabled value="">Ваше місто</option>
                                     <option value="">Хмельницький</option>
                                     <option value="">Львів</option>
                                     <option value="">Київ</option>
                                 </select>
-                            </label>
                         </td>
                     </tr>
                     <tr>
@@ -250,7 +248,7 @@
                             <p>Коментарій:</p>
                         </td>
                         <td>
-                            <textarea name="" id=""></textarea>
+                            <textarea placeholder="Введіть текст повідомлення" name="" id=""></textarea>
                             <button type="submit">Зареєструватися</button>
                         </td>
                     </tr>
