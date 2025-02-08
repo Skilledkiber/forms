@@ -16,25 +16,29 @@
             </div>
             <div class="forms">
                 <div class="simple-form">
-                    <h2 class="headlines">01. Проста форма</h2>
-                    <input type="text" placeholder="Введіть ім'я">
-                    <input type="email" placeholder="Email">
-                        <select name="" id="">
-                            <option selected disabled value="">Ваше місто</option>
-                            <option value="">Хмельницький</option>
-                            <option value="">Львів</option>
-                            <option value="">Київ</option>
-                        </select>
-                    <textarea placeholder="Email"></textarea>
-                    <button type="submit">Зареєструватися</button>
+                    <form action="bot.php" method="post">
+                        <h2 class="headlines">01. Проста форма</h2>
+                        <input type="text" name="name" placeholder="Введіть ім'я">
+                        <input type="email" name="email" placeholder="Email">
+                            <label class="arrow-1">
+                                <select name="yourtown" id="">
+                                    <option selected disabled value="">Ваше місто</option>
+                                    <option value="Хмельницький">Хмельницький</option>
+                                    <option value="Львів">Львів</option>
+                                    <option value="Київ">Київ</option>
+                                </select>
+                            </label>
+                        <textarea name="commentary" placeholder="Email"></textarea>
+                        <button type="submit">Зареєструватися</button>
+                    </form>
                 </div>
+                <button id="popupBtn" href="">Відкрити форму</button>
                 <div class="fix-form">
-                    <button id="popupBtn" href="">Відкрити форму</button>
                     <div class="fix">
                         <div class="popup" id="popup">
                             <h2>06. фіксована форма</h2>
                             <div class="fix-form-elem">
-                                <form action="">
+                                <form action="bot.php" method="post">
                                     <a href="#" id="cancel">
                                         <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="15px"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                                     </a>
@@ -65,7 +69,7 @@
                     </div>
                 </div>
             </div>
-            <hr>
+            <hr class="hr3">
         </header>
         <div class="elements">
             <h2 class="headlines">02. Елементи</h2>
@@ -139,7 +143,7 @@
                 </div>
             </div>
         </div>
-        <hr>
+        <hr class="hr3">
         <div class="stylized-checkbox">
             <h2 class="headlines">03. Стилізовані чекбокси</h2>
             <div class="flex between items-center">
@@ -184,7 +188,7 @@
                 </div>
             </div>
         </div>
-        <hr>
+        <hr class="hr3">
         <div class="table-form">
             <h2>04. форма таблицею</h2>
             <table>
@@ -211,12 +215,14 @@
                             <p>Місто:</p>
                         </td>
                         <td>
-                                <select name="" id="">
-                                    <option selected disabled value="">Ваше місто</option>
-                                    <option value="">Хмельницький</option>
-                                    <option value="">Львів</option>
-                                    <option value="">Київ</option>
-                                </select>
+                                <label class="arrow-1">
+                                    <select name="" id="">
+                                        <option selected disabled value="">Ваше місто</option>
+                                        <option value="">Хмельницький</option>
+                                        <option value="">Львів</option>
+                                        <option value="">Київ</option>
+                                    </select>
+                                </label>
                         </td>
                     </tr>
                     <tr>
@@ -283,7 +289,7 @@
                     </tr>
                     <tr>
                         <td colspan="3">
-                            <hr class="hr">
+                            <hr class="hr hr3">
                         </td>
                     </tr>
                     <tr>
@@ -337,7 +343,7 @@
                     </tr>
                     <tr>
                         <td colspan="3">
-                            <hr class="hr2">
+                            <hr class="hr2 hr3">
                         </td>
                     </tr>
                     <tr>
